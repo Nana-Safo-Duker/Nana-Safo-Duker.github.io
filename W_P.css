@@ -256,12 +256,12 @@ section {
 
 /* About section font size increase */
 #about h2 {
-  font-size: 4.2rem;
+  font-size: 2.94rem;
   margin-bottom: 0.525rem;
 }
 
 #about p {
-  font-size: 2.205rem;
+  font-size: 1.5435rem;
   margin-bottom: 0.525rem;
 }
 
@@ -437,11 +437,11 @@ footer p {
   }
   
   #about h2 {
-    font-size: 3.36rem;
+    font-size: 2.352rem;
   }
   
   #about p {
-    font-size: 1.764rem;
+    font-size: 1.2348rem;
   }
   
   .theme-toggle {
@@ -480,11 +480,11 @@ footer p {
   }
   
   #about h2 {
-    font-size: 2.8rem;
+    font-size: 1.96rem;
   }
   
   #about p {
-    font-size: 1.47rem;
+    font-size: 1.029rem;
   }
 }
 

@@ -283,6 +283,15 @@ section {
   display: block;
 }
 
+/* About section font size increase */
+#about h2 {
+  font-size: 2.1rem;
+}
+
+#about p {
+  font-size: 1.1025rem;
+}
+
 /* ========================================
    Cards / Articles
    ======================================== */
@@ -454,6 +463,14 @@ footer p {
     font-size: 1.2rem;
   }
   
+  #about h2 {
+    font-size: 1.68rem;
+  }
+  
+  #about p {
+    font-size: 0.882rem;
+  }
+  
   .theme-toggle {
     top: 1rem;
     right: 1rem;
@@ -493,6 +510,14 @@ footer p {
   header nav a {
     width: 100%;
     justify-content: center;
+  }
+  
+  #about h2 {
+    font-size: 1.4rem;
+  }
+  
+  #about p {
+    font-size: 0.735rem;
   }
 }
 

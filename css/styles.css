@@ -98,7 +98,7 @@ h1, h2, h3 {
 }
 
 h2 {
-  font-size: 3.96rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
   position: relative;
   padding-bottom: 0.5rem;
@@ -120,7 +120,7 @@ body:not(.dark-theme) h2::after {
 }
 
 h3 {
-  font-size: 2.76rem;
+  font-size: 0.7rem;
   margin-bottom: 1rem;
   color: var(--primary-dark);
 }
@@ -130,7 +130,7 @@ body:not(.dark-theme) h3 {
 }
 
 p {
-  font-size: 2.07rem;
+  font-size: 0.525rem;
   margin-bottom: 1rem;
 }
 
@@ -189,7 +189,7 @@ header.hero::before {
 }
 
 header h1 {
-  font-size: 6.93rem;
+  font-size: 1.75rem;
   margin-bottom: 1rem;
   position: relative;
   z-index: 1;
@@ -201,7 +201,7 @@ body:not(.dark-theme) header h1 {
 }
 
 .subtitle {
-  font-size: 2.58rem;
+  font-size: 0.65rem;
   font-weight: 400;
   margin-bottom: 2rem;
   opacity: 0.9;
@@ -430,11 +430,11 @@ footer p {
    ======================================== */
 @media (max-width: 768px) {
   header h1 {
-    font-size: 4.95rem;
+    font-size: 1.25rem;
   }
   
   .subtitle {
-    font-size: 2.19rem;
+    font-size: 0.55rem;
   }
   
   header nav {
@@ -443,7 +443,7 @@ footer p {
   
   header nav a {
     padding: 0.6rem 1rem;
-    font-size: 1.77rem;
+    font-size: 0.45rem;
   }
   
   main {
@@ -451,7 +451,7 @@ footer p {
   }
   
   h2 {
-    font-size: 3.18rem;
+    font-size: 0.8rem;
   }
   
   .theme-toggle {
@@ -478,11 +478,11 @@ footer p {
   }
   
   header h1 {
-    font-size: 3.96rem;
+    font-size: 1rem;
   }
   
   .subtitle {
-    font-size: 1.98rem;
+    font-size: 0.5rem;
   }
   
   header nav {

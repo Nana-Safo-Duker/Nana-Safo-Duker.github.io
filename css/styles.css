@@ -143,6 +143,17 @@ body:not(.dark-theme) strong {
   color: var(--primary-light);
 }
 
+/* Lists */
+ul, ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+}
+
 /* ========================================
    Header / Hero Section
    ======================================== */

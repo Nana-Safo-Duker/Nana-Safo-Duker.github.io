@@ -99,7 +99,7 @@ h1, h2, h3 {
 
 h2 {
   font-size: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   position: relative;
   padding-bottom: 0.5rem;
 }
@@ -161,7 +161,7 @@ header.hero {
   background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #000000 100%);
   color: var(--text-dark);
   text-align: center;
-  padding: 5rem 2rem;
+  padding: 2rem 2rem;
   position: relative;
   overflow: hidden;
 }
@@ -190,7 +190,7 @@ header.hero::before {
 
 header h1 {
   font-size: 2.625rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   position: relative;
   z-index: 1;
   text-shadow: 0 4px 20px rgba(88, 166, 255, 0.3);
@@ -203,7 +203,7 @@ body:not(.dark-theme) header h1 {
 .subtitle {
   font-size: 0.975rem;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   opacity: 0.9;
   position: relative;
   z-index: 1;
@@ -258,18 +258,18 @@ body:not(.dark-theme) header nav a:hover {
 main {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 1.5rem 2rem;
 }
 
 section {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 /* Two-column layout for projects and publications */
 #projects, #publications {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 1rem;
 }
 
 #projects h2,
@@ -286,10 +286,12 @@ section {
 /* About section font size increase */
 #about h2 {
   font-size: 2.1rem;
+  margin-bottom: 0.75rem;
 }
 
 #about p {
   font-size: 1.1025rem;
+  margin-bottom: 0.75rem;
 }
 
 /* ========================================
@@ -298,9 +300,9 @@ section {
 article {
   background: var(--card-bg-dark);
   border: 1px solid var(--border-dark);
-  padding: 2rem;
+  padding: 1.25rem;
   border-radius: var(--border-radius);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   transition: var(--transition);
   position: relative;
   overflow: hidden;
@@ -419,8 +421,8 @@ footer {
   background: var(--card-bg-dark);
   border-top: 1px solid var(--border-dark);
   color: var(--text-dark);
-  padding: 2.5rem 1rem;
-  margin-top: 4rem;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
 }
 
 body:not(.dark-theme) footer {

@@ -256,7 +256,7 @@ body:not(.dark-theme) header nav a:hover {
    Main Content
    ======================================== */
 main {
-  max-width: 1100px;
+  max-width: 1485px;
   margin: 0 auto;
   padding: 1.05rem 2rem;
 }
@@ -285,12 +285,12 @@ section {
 
 /* About section font size increase */
 #about h2 {
-  font-size: 1.47rem;
+  font-size: 1.176rem;
   margin-bottom: 0.525rem;
 }
 
 #about p {
-  font-size: 0.77175rem;
+  font-size: 0.6174rem;
   margin-bottom: 0.525rem;
 }
 
@@ -466,11 +466,11 @@ footer p {
   }
   
   #about h2 {
-    font-size: 1.176rem;
+    font-size: 0.9408rem;
   }
   
   #about p {
-    font-size: 0.6174rem;
+    font-size: 0.49392rem;
   }
   
   .theme-toggle {
@@ -515,11 +515,11 @@ footer p {
   }
   
   #about h2 {
-    font-size: 0.98rem;
+    font-size: 0.784rem;
   }
   
   #about p {
-    font-size: 0.5145rem;
+    font-size: 0.4116rem;
   }
 }
 

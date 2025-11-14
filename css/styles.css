@@ -135,12 +135,7 @@ p {
 }
 
 strong {
-  color: var(--primary-dark);
   font-weight: 600;
-}
-
-body:not(.dark-theme) strong {
-  color: var(--primary-light);
 }
 
 /* Lists */

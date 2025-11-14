@@ -397,6 +397,7 @@ body:not(.dark-theme) article li {
 #projects article {
   padding: 0.525rem;
   margin-bottom: 0.42rem;
+  max-width: 455px;
   width: 100%;
 }
 

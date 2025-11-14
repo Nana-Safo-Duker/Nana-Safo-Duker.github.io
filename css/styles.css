@@ -146,12 +146,19 @@ body:not(.dark-theme) strong {
 /* Lists */
 ul, ol {
   margin: 1rem 0;
-  padding-left: 1.5rem;
+  padding-left: 0;
+  list-style: none;
 }
 
 li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   line-height: 1.8;
+  font-size: 0.7875rem;
+  opacity: 0.9;
+}
+
+body:not(.dark-theme) li {
+  opacity: 0.85;
 }
 
 /* ========================================
@@ -256,7 +263,7 @@ body:not(.dark-theme) header nav a:hover {
    Main Content
    ======================================== */
 main {
-  max-width: 1158.6px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0.8rem 2rem;
 }
@@ -369,6 +376,21 @@ article p {
 
 body:not(.dark-theme) article p {
   opacity: 0.85;
+}
+
+article li {
+  opacity: 0.9;
+  line-height: 1.8;
+  font-size: 0.7875rem;
+}
+
+body:not(.dark-theme) article li {
+  opacity: 0.85;
+}
+
+#projects article li,
+#publications article li {
+  font-size: 0.6449625rem;
 }
 
 /* Reduced size for projects and publications boxes */

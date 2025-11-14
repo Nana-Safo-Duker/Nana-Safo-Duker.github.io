@@ -285,9 +285,9 @@ section {
   gap: 0.56rem;
 }
 
-/* Research Projects - single column layout */
+/* Reduce width of Research Projects boxes */
 #projects {
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 0.7fr);
   justify-content: start;
 }
 

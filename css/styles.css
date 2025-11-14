@@ -279,9 +279,9 @@ section {
   gap: 0.56rem;
 }
 
-/* Reduce width of Research Projects boxes */
+/* Research Projects - single column layout */
 #projects {
-  grid-template-columns: repeat(2, 0.7fr);
+  grid-template-columns: 1fr;
   justify-content: start;
 }
 
@@ -394,7 +394,12 @@ body:not(.dark-theme) article li {
 }
 
 /* Reduced size for projects and publications boxes */
-#projects article,
+#projects article {
+  padding: 0.525rem;
+  margin-bottom: 0.42rem;
+  width: 100%;
+}
+
 #publications article {
   padding: 0.525rem;
   margin-bottom: 0.42rem;

@@ -130,7 +130,7 @@ body:not(.dark-theme) h3 {
 }
 
 p {
-  font-size: 0.7875rem;
+  font-size: 0.86625rem;
   margin-bottom: 1rem;
 }
 
@@ -146,14 +146,14 @@ body:not(.dark-theme) strong {
 /* Lists */
 ul, ol {
   margin: 1rem 0;
-  padding-left: 0;
-  list-style: none;
+  padding-left: 1.5rem;
+  list-style: disc;
 }
 
 li {
   margin-bottom: 1rem;
   line-height: 1.8;
-  font-size: 0.7875rem;
+  font-size: 0.86625rem;
   opacity: 0.9;
 }
 
@@ -309,7 +309,7 @@ section {
 }
 
 #about p {
-  font-size: 0.852012rem;
+  font-size: 0.9372132rem;
   margin-bottom: 0.4rem;
 }
 
@@ -381,7 +381,7 @@ body:not(.dark-theme) article p {
 article li {
   opacity: 0.9;
   line-height: 1.8;
-  font-size: 0.7875rem;
+  font-size: 0.86625rem;
 }
 
 body:not(.dark-theme) article li {
@@ -390,7 +390,7 @@ body:not(.dark-theme) article li {
 
 #projects article li,
 #publications article li {
-  font-size: 0.6449625rem;
+  font-size: 0.7094625rem;
 }
 
 /* Reduced size for projects and publications boxes */
@@ -410,7 +410,7 @@ body:not(.dark-theme) article li {
 
 #projects article p,
 #publications article p {
-  font-size: 0.6449625rem;
+  font-size: 0.70945875rem;
 }
 
 /* ========================================
@@ -524,7 +524,7 @@ footer p {
   }
   
   #about p {
-    font-size: 0.6816096rem;
+    font-size: 0.74977056rem;
   }
   
   .theme-toggle {
@@ -579,7 +579,7 @@ footer p {
   }
   
   #about p {
-    font-size: 0.568008rem;
+    font-size: 0.6248088rem;
   }
 }
 

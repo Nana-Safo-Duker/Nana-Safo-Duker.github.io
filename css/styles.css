@@ -282,7 +282,7 @@ section {
 
 /* Research Projects boxes - wider columns for long titles */
 #projects {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 0.9fr);
   justify-content: start;
 }
 

@@ -49,7 +49,7 @@
   box-shadow: var(--shadow-md);
   z-index: 1000;
   transition: var(--transition);
-  font-size: 1.8rem;
+  font-size: 1.98rem;
 }
 
 .theme-toggle:hover {
@@ -98,7 +98,7 @@ h1, h2, h3 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   margin-bottom: 0.6rem;
   position: relative;
   padding-bottom: 0.4rem;
@@ -120,7 +120,7 @@ body:not(.dark-theme) h2::after {
 }
 
 h3 {
-  font-size: 1.05rem;
+  font-size: 1.155rem;
   margin-bottom: 1rem;
   color: var(--primary-dark);
 }
@@ -130,7 +130,7 @@ body:not(.dark-theme) h3 {
 }
 
 p {
-  font-size: 0.86625rem;
+  font-size: 0.952875rem;
   margin-bottom: 1rem;
 }
 
@@ -154,7 +154,7 @@ ol {
 li {
   margin-bottom: 1rem;
   line-height: 1.8;
-  font-size: 0.86625rem;
+  font-size: 0.952875rem;
   opacity: 0.9;
 }
 
@@ -197,7 +197,7 @@ header.hero::before {
 }
 
 header h1 {
-  font-size: 2.625rem;
+  font-size: 2.8875rem;
   margin-bottom: 0.25rem;
   position: relative;
   z-index: 1;
@@ -209,7 +209,7 @@ body:not(.dark-theme) header h1 {
 }
 
 .subtitle {
-  font-size: 0.975rem;
+  font-size: 1.0725rem;
   font-weight: 400;
   margin-bottom: 0.5rem;
   opacity: 0.9;
@@ -264,7 +264,7 @@ body:not(.dark-theme) header nav a:hover {
    Main Content
    ======================================== */
 main {
-  max-width: 1260px;
+  max-width: 1134px;
   margin: 0 auto;
   padding: 0.8rem 2rem;
 }
@@ -282,8 +282,9 @@ section {
 
 /* Research Projects boxes - wider columns for long titles */
 #projects {
-  grid-template-columns: repeat(2, 0.9fr);
+  grid-template-columns: repeat(2, 0.36137988fr);
   justify-content: start;
+  gap: 0.224858592rem;
 }
 
 /* Reduce width of Publications & Articles boxes to match Research Projects */
@@ -305,12 +306,12 @@ section {
 
 /* About section font size increase */
 #about h2 {
-  font-size: 1.62288rem;
+  font-size: 1.785168rem;
   margin-bottom: 0.4rem;
 }
 
 #about p {
-  font-size: 0.9372132rem;
+  font-size: 1.03093452rem;
   margin-bottom: 0.4rem;
 }
 
@@ -382,45 +383,51 @@ body:not(.dark-theme) article p {
 article li {
   opacity: 0.9;
   line-height: 1.8;
-  font-size: 0.86625rem;
+  font-size: 0.952875rem;
 }
 
 body:not(.dark-theme) article li {
   opacity: 0.85;
 }
 
-#projects article li,
+#projects article li {
+  font-size: 1.1379759745358814rem;
+}
+
 #publications article li {
-  font-size: 0.7094625rem;
+  font-size: 0.78040875rem;
 }
 
 /* Projects boxes - wider for long titles */
 #projects article {
-  padding: 0.525rem;
-  margin-bottom: 0.42rem;
+  padding: 0.21080493rem;
+  margin-bottom: 0.168643944rem;
   width: 100%;
 }
 
 #publications article {
   padding: 0.525rem;
   margin-bottom: 0.42rem;
-  max-width: 455px;
+  max-width: 409.5px;
   width: 100%;
 }
 
 #projects article h3 {
-  margin-bottom: 0.49rem;
-  font-size: 1.137283875rem;
+  margin-bottom: 0.196751268rem;
+  font-size: 1.8242003290900765rem;
 }
 
 #publications article h3 {
   margin-bottom: 0.49rem;
-  font-size: 0.85995rem;
+  font-size: 0.945945rem;
 }
 
-#projects article p,
+#projects article p {
+  font-size: 1.1379699595457944rem;
+}
+
 #publications article p {
-  font-size: 0.70945875rem;
+  font-size: 0.780404625rem;
 }
 
 /* ========================================
@@ -439,6 +446,14 @@ body:not(.dark-theme) article li {
   border: 2px solid transparent;
   position: relative;
   overflow: hidden;
+}
+
+/* Reduce button size in projects section by 40% */
+#projects article .btn {
+  padding: 0.48rem 0.9rem;
+  margin-top: 0.6rem;
+  font-size: 0.6rem;
+  border-radius: 4.8px;
 }
 
 body:not(.dark-theme) .btn {
@@ -461,6 +476,11 @@ body:not(.dark-theme) .btn {
 .btn:hover::before {
   width: 300px;
   height: 300px;
+}
+
+#projects article .btn:hover::before {
+  width: 180px;
+  height: 180px;
 }
 
 .btn:hover {
@@ -505,11 +525,11 @@ footer p {
    ======================================== */
 @media (max-width: 768px) {
   header h1 {
-    font-size: 1.875rem;
+    font-size: 2.0625rem;
   }
   
   .subtitle {
-    font-size: 0.825rem;
+    font-size: 0.9075rem;
   }
   
   header nav {
@@ -518,7 +538,7 @@ footer p {
   
   header nav a {
     padding: 0.6rem 1rem;
-    font-size: 0.675rem;
+    font-size: 0.7425rem;
   }
   
   main {
@@ -526,15 +546,15 @@ footer p {
   }
   
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.32rem;
   }
   
   #about h2 {
-    font-size: 1.298304rem;
+    font-size: 1.4281344rem;
   }
   
   #about p {
-    font-size: 0.74977056rem;
+    font-size: 0.824747616rem;
   }
   
   .theme-toggle {
@@ -567,11 +587,11 @@ footer p {
   }
   
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.65rem;
   }
   
   .subtitle {
-    font-size: 0.75rem;
+    font-size: 0.825rem;
   }
   
   header nav {
@@ -585,11 +605,11 @@ footer p {
   }
   
   #about h2 {
-    font-size: 1.08292rem;
+    font-size: 1.191212rem;
   }
   
   #about p {
-    font-size: 0.6248088rem;
+    font-size: 0.68728968rem;
   }
 }
 

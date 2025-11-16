@@ -391,7 +391,7 @@ body:not(.dark-theme) article li {
 }
 
 #projects article li {
-  font-size: 0.6543361853581318rem;
+  font-size: 0.7524866121618316rem;
 }
 
 #publications article li {
@@ -414,7 +414,7 @@ body:not(.dark-theme) article li {
 
 #projects article h3 {
   margin-bottom: 0.295126902rem;
-  font-size: 1.048915189226793rem;
+  font-size: 1.206253467611812rem;
 }
 
 #publications article h3 {
@@ -423,7 +423,7 @@ body:not(.dark-theme) article li {
 }
 
 #projects article p {
-  font-size: 0.6543327267388318rem;
+  font-size: 0.7524826357496566rem;
 }
 
 #publications article p {
@@ -450,10 +450,10 @@ body:not(.dark-theme) article li {
 
 /* Reduce button size in projects section by 40% */
 #projects article .btn {
-  padding: 0.528rem 0.99rem;
-  margin-top: 0.66rem;
-  font-size: 0.66rem;
-  border-radius: 5.28px;
+  padding: 0.5808rem 1.089rem;
+  margin-top: 0.726rem;
+  font-size: 0.726rem;
+  border-radius: 5.808px;
 }
 
 body:not(.dark-theme) .btn {
@@ -479,8 +479,8 @@ body:not(.dark-theme) .btn {
 }
 
 #projects article .btn:hover::before {
-  width: 198px;
-  height: 198px;
+  width: 217.8px;
+  height: 217.8px;
 }
 
 .btn:hover {

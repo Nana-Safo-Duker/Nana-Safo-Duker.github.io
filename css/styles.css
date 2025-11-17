@@ -282,10 +282,10 @@ section {
 
 /* Research Projects boxes - wider columns for long titles */
 #projects {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(500px, 1fr));
   justify-content: start;
   gap: 1rem;
-  align-items: stretch;
+  align-items: start;
 }
 
 /* Reduce width of Publications & Articles boxes to match Research Projects */
@@ -406,7 +406,7 @@ body:not(.dark-theme) article li {
   padding: 1.5rem;
   margin-bottom: 1rem;
   width: 100%;
-  min-width: 0;
+  min-width: 500px;
   box-sizing: border-box;
   aspect-ratio: 1 / 1;
   display: flex;

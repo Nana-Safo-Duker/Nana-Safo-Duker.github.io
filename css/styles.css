@@ -376,7 +376,7 @@ article h3 {
 
 /* Override for projects section with reduced height */
 #projects article h3 {
-  margin-bottom: 0.37485rem;
+  margin-bottom: 0.2803878rem;
   font-size: 1.17478210224375rem;
 }
 
@@ -409,8 +409,8 @@ body:not(.dark-theme) article li {
 
 /* Projects boxes - wider for long titles */
 #projects article {
-  padding: 1.1475rem;
-  margin-bottom: 0.765rem;
+  padding: 0.85833rem;
+  margin-bottom: 0.57222rem;
   width: 100%;
   min-width: 0;
   box-sizing: border-box;
@@ -435,7 +435,7 @@ body:not(.dark-theme) article li {
 
 #projects article p {
   font-size: 0.729678324375rem;
-  margin-bottom: 0.765rem;
+  margin-bottom: 0.57222rem;
 }
 
 #publications article p {

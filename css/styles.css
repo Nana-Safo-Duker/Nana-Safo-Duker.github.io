@@ -282,14 +282,14 @@ section {
 
 /* Research Projects boxes - wider columns for long titles */
 #projects {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   justify-content: start;
   gap: 1rem;
 }
 
 /* Reduce width of Publications & Articles boxes to match Research Projects */
 #publications {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   justify-content: start;
   gap: 1rem;
 }
@@ -404,12 +404,16 @@ body:not(.dark-theme) article li {
   padding: 1.5rem;
   margin-bottom: 1rem;
   width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 #publications article {
   padding: 1.5rem;
   margin-bottom: 1rem;
   width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 #projects article h3 {

@@ -285,6 +285,7 @@ section {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   justify-content: start;
   gap: 1rem;
+  align-items: stretch;
 }
 
 /* Reduce width of Publications & Articles boxes to match Research Projects */
@@ -292,6 +293,7 @@ section {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   justify-content: start;
   gap: 1rem;
+  align-items: stretch;
 }
 
 #projects h2,
@@ -406,6 +408,9 @@ body:not(.dark-theme) article li {
   width: 100%;
   min-width: 0;
   box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #publications article {
@@ -414,6 +419,9 @@ body:not(.dark-theme) article li {
   width: 100%;
   min-width: 0;
   box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #projects article h3 {
@@ -455,7 +463,7 @@ body:not(.dark-theme) article li {
 /* Reduce button size in projects section by 40% */
 #projects article .btn {
   padding: 0.5808rem 1.089rem;
-  margin-top: 0.726rem;
+  margin-top: auto;
   font-size: 0.726rem;
   border-radius: 5.808px;
 }

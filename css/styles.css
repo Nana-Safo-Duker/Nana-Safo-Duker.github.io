@@ -98,7 +98,7 @@ h1, h2, h3 {
 }
 
 h2 {
-  font-size: 1.65rem;
+  font-size: 1.7325rem;
   margin-bottom: 0.6rem;
   position: relative;
   padding-bottom: 0.4rem;
@@ -120,7 +120,7 @@ body:not(.dark-theme) h2::after {
 }
 
 h3 {
-  font-size: 1.155rem;
+  font-size: 1.21275rem;
   margin-bottom: 1rem;
   color: var(--primary-dark);
 }
@@ -130,8 +130,8 @@ body:not(.dark-theme) h3 {
 }
 
 p {
-  font-size: 0.952875rem;
-  margin-bottom: 1rem;
+  font-size: 0.8504409375rem;
+  margin-bottom: 0.85rem;
 }
 
 strong {
@@ -152,9 +152,9 @@ ol {
 }
 
 li {
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
   line-height: 1.8;
-  font-size: 0.952875rem;
+  font-size: 0.8504409375rem;
   opacity: 0.9;
 }
 
@@ -197,7 +197,7 @@ header.hero::before {
 }
 
 header h1 {
-  font-size: 2.8875rem;
+  font-size: 3.031875rem;
   margin-bottom: 0.25rem;
   position: relative;
   z-index: 1;
@@ -209,7 +209,7 @@ body:not(.dark-theme) header h1 {
 }
 
 .subtitle {
-  font-size: 1.0725rem;
+  font-size: 1.126125rem;
   font-weight: 400;
   margin-bottom: 0.5rem;
   opacity: 0.9;
@@ -264,13 +264,13 @@ body:not(.dark-theme) header nav a:hover {
    Main Content
    ======================================== */
 main {
-  max-width: 1122.66px;
+  max-width: 1291.059px;
   margin: 0 auto;
   padding: 0.8rem 2rem;
 }
 
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 2.55rem;
 }
 
 /* Two-column layout for projects and publications */
@@ -282,10 +282,10 @@ section {
 
 /* Research Projects boxes - wider columns for long titles */
 #projects {
-  grid-template-columns: repeat(2, minmax(500px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   justify-content: start;
-  gap: 1rem;
-  align-items: start;
+  gap: 1.15rem;
+  align-items: stretch;
 }
 
 /* Reduce width of Publications & Articles boxes to match Research Projects */
@@ -309,12 +309,12 @@ section {
 
 /* About section font size increase */
 #about h2 {
-  font-size: 1.6066512rem;
+  font-size: 1.68698376rem;
   margin-bottom: 0.4rem;
 }
 
 #about p {
-  font-size: 0.927841068rem;
+  font-size: 0.9742331214rem;
   margin-bottom: 0.4rem;
 }
 
@@ -374,6 +374,12 @@ article h3 {
   gap: 0.5rem;
 }
 
+/* Override for projects section with reduced height */
+#projects article h3 {
+  margin-bottom: 0.37485rem;
+  font-size: 1.17478210224375rem;
+}
+
 article p {
   opacity: 0.9;
   line-height: 1.8;
@@ -394,7 +400,7 @@ body:not(.dark-theme) article li {
 }
 
 #projects article li {
-  font-size: 0.78040875rem;
+  font-size: 0.72968218125rem;
 }
 
 #publications article li {
@@ -403,12 +409,11 @@ body:not(.dark-theme) article li {
 
 /* Projects boxes - wider for long titles */
 #projects article {
-  padding: 1.5rem;
-  margin-bottom: 1rem;
+  padding: 1.1475rem;
+  margin-bottom: 0.765rem;
   width: 100%;
-  min-width: 500px;
+  min-width: 0;
   box-sizing: border-box;
-  aspect-ratio: 1 / 1;
   display: flex;
   flex-direction: column;
 }
@@ -416,26 +421,21 @@ body:not(.dark-theme) article li {
 #publications article {
   padding: 1.5rem;
   margin-bottom: 1rem;
-  width: 100%;
+  width: 85%;
   min-width: 0;
   box-sizing: border-box;
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-#projects article h3 {
-  margin-bottom: 0.49rem;
-  font-size: 0.945945rem;
-}
-
 #publications article h3 {
-  margin-bottom: 0.49rem;
+  margin-bottom: 0.7rem;
   font-size: 0.945945rem;
 }
 
 #projects article p {
-  font-size: 0.780404625rem;
+  font-size: 0.729678324375rem;
+  margin-bottom: 0.765rem;
 }
 
 #publications article p {
@@ -450,9 +450,9 @@ body:not(.dark-theme) article li {
   background: linear-gradient(135deg, var(--accent-dark), var(--primary-dark));
   color: white;
   text-decoration: none;
-  padding: 0.8rem 1.5rem;
+  padding: 0.68rem 1.275rem;
   border-radius: 8px;
-  margin-top: 1rem;
+  margin-top: 0.85rem;
   font-weight: 600;
   transition: var(--transition);
   border: 2px solid transparent;
@@ -460,9 +460,22 @@ body:not(.dark-theme) article li {
   overflow: hidden;
 }
 
-/* Match button style to publications */
-#projects article .btn {
+/* Match button style - ensure buttons align at bottom */
+#projects article .btn,
+#publications article .btn {
   margin-top: auto;
+}
+
+/* Reduce Publications button width by 60% */
+#publications article .btn {
+  width: 40%;
+  max-width: 40%;
+}
+
+/* Reduce Research Projects button width by 80% */
+#projects article .btn {
+  width: 20%;
+  max-width: 20%;
 }
 
 body:not(.dark-theme) .btn {
@@ -487,7 +500,8 @@ body:not(.dark-theme) .btn {
   height: 300px;
 }
 
-#projects article .btn:hover::before {
+#projects article .btn:hover::before,
+#publications article .btn:hover::before {
   width: 217.8px;
   height: 217.8px;
 }

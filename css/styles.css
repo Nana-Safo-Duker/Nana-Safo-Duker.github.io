@@ -408,7 +408,7 @@ body:not(.dark-theme) article li {
   width: 100%;
   min-width: 0;
   box-sizing: border-box;
-  height: 100%;
+  aspect-ratio: 1 / 1;
   display: flex;
   flex-direction: column;
 }

@@ -63,6 +63,36 @@ body:not(.dark-theme) .theme-toggle {
 }
 
 /* ========================================
+   Profile Image
+   ======================================== */
+.profile-image {
+  position: fixed;
+  top: 0.25rem;
+  left: 2rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary-dark);
+  box-shadow: var(--shadow-lg);
+  z-index: 999;
+  transition: var(--transition);
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(88, 166, 255, 0.4);
+}
+
+body:not(.dark-theme) .profile-image {
+  border-color: var(--primary-light);
+}
+
+body:not(.dark-theme) .profile-image:hover {
+  box-shadow: 0 8px 25px rgba(0, 119, 255, 0.3);
+}
+
+/* ========================================
    Base Styles
    ======================================== */
 * {
@@ -588,6 +618,13 @@ footer p {
     height: 40px;
   }
   
+  .profile-image {
+    top: 0.1rem;
+    left: 1rem;
+    width: 140px;
+    height: 140px;
+  }
+  
   article {
     padding: 1.5rem;
   }
@@ -634,6 +671,14 @@ footer p {
   
   #about p {
     font-size: 0.68728968rem;
+  }
+  
+  .profile-image {
+    top: 0.05rem;
+    left: 0.5rem;
+    width: 100px;
+    height: 100px;
+    border-width: 3px;
   }
 }
 

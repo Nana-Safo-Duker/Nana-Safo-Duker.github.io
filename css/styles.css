@@ -68,7 +68,7 @@ body:not(.dark-theme) .theme-toggle {
 .profile-image {
   position: fixed;
   top: 0.25rem;
-  left: 2.5rem;
+  left: 3.5rem;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -620,7 +620,7 @@ footer p {
   
   .profile-image {
     top: 0.1rem;
-    left: 1.25rem;
+    left: 1.75rem;
     width: 140px;
     height: 140px;
   }
@@ -675,7 +675,7 @@ footer p {
   
   .profile-image {
     top: 0.05rem;
-    left: 0.75rem;
+    left: 1.25rem;
     width: 100px;
     height: 100px;
     border-width: 3px;

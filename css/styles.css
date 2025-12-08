@@ -648,7 +648,7 @@ footer p {
 
 @media (max-width: 480px) {
   header.hero {
-    padding: 6.5rem 1.5rem 3rem;
+    padding: 6rem 1.5rem 3rem;
   }
   
   header h1 {
@@ -680,8 +680,8 @@ footer p {
   .profile-image {
     top: 1rem;
     left: 0.6rem;
-    width: 90px;
-    height: 90px;
+    width: 74px;
+    height: 74px;
     border-width: 3px;
   }
 }

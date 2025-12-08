@@ -204,10 +204,10 @@
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
     const icon = themeToggle.querySelector('i');
-    const isMobileViewport = window.matchMedia('(max-width: 768px)').matches;
+    const isMobileDevice = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-    // On mobile, force light theme and hide the toggle
-    if (isMobileViewport) {
+    // On mobile devices (including "Request desktop site"), force light theme and hide the toggle
+    if (isMobileDevice) {
       body.classList.remove('dark-theme');
       icon.classList.remove('fa-moon');
       icon.classList.add('fa-sun');

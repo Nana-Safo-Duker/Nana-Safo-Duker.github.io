@@ -93,7 +93,7 @@ body:not(.dark-theme) .profile-image:hover {
 }
 
 /* Desktop alignment: keep the profile image consistently anchored near the top-left on wide screens */
-@media (min-width: 1101px) {
+@media (min-width: 901px) {
   .profile-image {
     top: 0.25rem;
     left: 1.5rem;

@@ -62,6 +62,13 @@ body:not(.dark-theme) .theme-toggle {
   color: var(--primary-light);
 }
 
+/* Hide toggle button on touch devices (including when desktop layout is requested) */
+@media (pointer: coarse) {
+  .theme-toggle {
+    display: none !important;
+  }
+}
+
 /* ========================================
    Profile Image
    ======================================== */

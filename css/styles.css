@@ -495,18 +495,11 @@ body:not(.dark-theme) article li {
 #projects article .btn,
 #publications article .btn {
   margin-top: auto;
-}
-
-/* Reduce Publications button width by 60% */
-#publications article .btn {
-  width: 40%;
-  max-width: 40%;
-}
-
-/* Reduce Research Projects button width by 80% */
-#projects article .btn {
-  width: 20%;
-  max-width: 20%;
+  width: auto;
+  max-width: none;
+  min-width: 130px;
+  align-self: flex-start;
+  white-space: nowrap;
 }
 
 body:not(.dark-theme) .btn {

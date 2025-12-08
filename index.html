@@ -217,13 +217,15 @@
       themeToggle.style.display = 'none';
       localStorage.setItem('theme', 'light');
     } else {
-      // Desktop/tablet: respect saved preference (default dark)
-      const currentTheme = localStorage.getItem('theme') || 'dark';
-      if (currentTheme === 'light') {
-        body.classList.remove('dark-theme');
-        icon.classList.remove('fa-sun');
-        icon.classList.add('fa-moon');
+      // Desktop/tablet: always default to dark mode (ignore saved 'light' preference)
+      // Clear any previously saved 'light' preference to ensure dark mode on new tabs/windows
+      if (localStorage.getItem('theme') === 'light') {
+        localStorage.removeItem('theme');
       }
+      // Ensure dark theme is active (already set in HTML, but ensure it's maintained)
+      body.classList.add('dark-theme');
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');
 
       themeToggle.addEventListener('click', () => {
         body.classList.toggle('dark-theme');
@@ -235,7 +237,8 @@
         } else {
           icon.classList.remove('fa-moon');
           icon.classList.add('fa-sun');
-          localStorage.setItem('theme', 'light');
+          // Don't save 'light' preference - will default to dark on new tabs/windows
+          localStorage.removeItem('theme');
         }
       });
     }

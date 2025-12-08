@@ -58,6 +58,7 @@ The website features a dual-theme system:
 - **Light Theme**: Clean and professional light mode
 - **Persistent**: Theme preference saved in localStorage
 - **Toggle Button**: Easy theme switching from header
+- **Mobile behavior**: On mobile (including “Request desktop site”), the site forces light mode and hides the theme toggle for consistent readability; desktop keeps the toggle and saved preference.
 
 ## 🚀 Getting Started
 

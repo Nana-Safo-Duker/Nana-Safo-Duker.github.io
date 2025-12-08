@@ -66,9 +66,9 @@ body:not(.dark-theme) .theme-toggle {
    Profile Image
    ======================================== */
 .profile-image {
-  position: fixed;
-  top: 0.25rem;
-  left: 3.5rem;
+  position: absolute;
+  top: 0.75rem;
+  left: 2rem;
   width: 200px;
   height: 200px;
   border-radius: 50%;

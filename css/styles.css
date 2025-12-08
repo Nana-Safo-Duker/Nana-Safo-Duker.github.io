@@ -92,6 +92,16 @@ body:not(.dark-theme) .profile-image:hover {
   box-shadow: 0 8px 25px rgba(0, 119, 255, 0.3);
 }
 
+/* Desktop alignment: keep the profile image consistently anchored near the top-left on wide screens */
+@media (min-width: 1101px) {
+  .profile-image {
+    top: 0.25rem;
+    left: 1.5rem;
+    width: 190px;
+    height: 190px;
+  }
+}
+
 /* ========================================
    Base Styles
    ======================================== */

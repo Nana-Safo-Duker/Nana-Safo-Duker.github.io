@@ -333,7 +333,7 @@ section {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   justify-content: start;
   gap: 1.15rem;
-  align-items: stretch;
+  align-items: start;
 }
 
 /* Reduce width of Publications & Articles boxes to match Research Projects */
@@ -456,21 +456,15 @@ body:not(.dark-theme) article li {
   font-size: 0.78040875rem;
 }
 
-/* Projects boxes — uniform square tiles (1:1); scroll inside when copy exceeds space */
+/* Projects boxes — height follows content; paired rows no longer forced equal-tall */
 #projects article {
   padding: 0.7295805rem;
   margin-bottom: 0.486387rem;
   width: 100%;
   min-width: 0;
-  height: auto;
-  aspect-ratio: 1 / 1;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-self: stretch;
-  overflow-x: hidden;
-  overflow-y: auto;
-  scrollbar-gutter: stable;
 }
 
 #projects article ul,

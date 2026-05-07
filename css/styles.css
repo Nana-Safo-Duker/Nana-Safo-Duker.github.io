@@ -426,6 +426,7 @@ article h3 {
 #projects article h3 {
   margin-bottom: 0.2803878rem;
   font-size: 1.17478210224375rem;
+  flex-shrink: 0;
 }
 
 article p {
@@ -455,23 +456,21 @@ body:not(.dark-theme) article li {
   font-size: 0.78040875rem;
 }
 
-/* Projects boxes - wider for long titles */
+/* Projects boxes — uniform square tiles (1:1); scroll inside when copy exceeds space */
 #projects article {
   padding: 0.7295805rem;
   margin-bottom: 0.486387rem;
   width: 100%;
   min-width: 0;
+  height: auto;
+  aspect-ratio: 1 / 1;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-self: stretch;
-}
-
-/* Equal footprint for all six portfolio cards (desktop): matches tallest cards like Bioinformatics */
-@media (min-width: 769px) {
-  #projects article {
-    min-height: 38rem;
-  }
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
 }
 
 #projects article ul,
@@ -535,6 +534,7 @@ body:not(.dark-theme) article li {
   min-width: 130px;
   align-self: flex-start;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 body:not(.dark-theme) .btn {

@@ -466,6 +466,31 @@ body:not(.dark-theme) article li {
   flex-direction: column;
 }
 
+/* GitHub portfolio screenshot thumbnails (research cards) */
+#projects article .portfolio-preview {
+  width: 100%;
+  height: 148px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: calc(var(--border-radius) - 2px);
+  margin: 0 0 0.65rem 0;
+  border: 1px solid var(--border-dark);
+  flex-shrink: 0;
+}
+
+body:not(.dark-theme) #projects article .portfolio-preview {
+  border-color: var(--border-light);
+}
+
+/* Dual-repo screenshot: emphasize left or right repository card */
+#projects article .portfolio-preview--dual-left {
+  object-position: 22% top;
+}
+
+#projects article .portfolio-preview--dual-right {
+  object-position: 78% top;
+}
+
 #publications article {
   padding: 1.5rem;
   margin-bottom: 1rem;

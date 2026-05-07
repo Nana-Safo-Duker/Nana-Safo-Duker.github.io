@@ -92,7 +92,7 @@ This site is automatically deployed via GitHub Pages:
 ## 📝 Content Sections
 
 - **About**: Introduction and research interests
-- **Research Projects**: Featured projects with descriptions and links
+- **Research Projects**: Featured portfolio cards with GitHub links, including infectious disease modelling & epidemiology, computational biomedical AI/ML, climate & energy systems, bioinformatics, clinical analytics, and multi-domain data science
 - **Publications**: Articles and papers with Medium integration
 - **Social Links**: GitHub, LinkedIn, and Medium profiles
 
@@ -104,17 +104,15 @@ This site is automatically deployed via GitHub Pages:
 
 ## 🎯 Key Projects Highlighted
 
-1. **Cardiovascular Risk Prediction from Retinal Images**
-   - Deep learning model using CNNs and transfer learning
-   - UK Biobank and EyePACS datasets
+1. **[Infectious Disease Modelling & Epidemiology Portfolio](https://github.com/Nana-Safo-Duker/Infectious-Disease-Modelling_Epidemiology-Portfolio)** — reproducible transmission modelling workflows (for example malaria-focused simulation projects).
 
-2. **Malaria Transmission Simulation in Madagascar**
-   - R-based epidemiological model
-   - Stochastic modeling for intervention strategies
+2. **[Computational Biomedical Research Portfolio](https://github.com/Nana-Safo-Duker/Computational_Biomedical_Research-Portfolio)** — AI/ML across neurology eye-tracking analytics, retinal cardiovascular risk, oncology genomics and radiomics, sequence-based gene expression, imaging phenotyping, and drug-target discovery.
 
-3. **Predicting Gene Expression from DNA Sequence**
-   - Reproducing Nature Reviews Genetics paper
-   - Stanford Data Ocean program
+3. **[Climate, Energy & Green Microbiology Portfolio](https://github.com/Nana-Safo-Duker/Climate_Energy_GreenMicrobiology-Portfolio)** — weather and extreme-event forecasting, renewable optimization, electricity pricing, load and demand forecasting, energy RL, and sustainable transition modelling.
+
+4. **Cardiovascular Risk Prediction from Retinal Images** — deep learning with CNNs and transfer learning (UK Biobank and EyePACS–style workflows).
+
+5. **Predicting Gene Expression from DNA Sequence** — deep learning sequence models aligned with regulatory genomics benchmarks.
 
 ## 📄 License
 
@@ -136,4 +134,4 @@ For inquiries, collaboration opportunities, or questions:
 
 **Built with ❤️ using HTML, CSS, JavaScript & GitHub Pages**
 
-© 2025 Nana Safo Duker. All rights reserved.
+© 2026 Nana Safo Duker. All rights reserved.

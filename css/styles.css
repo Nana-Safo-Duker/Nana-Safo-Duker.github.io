@@ -464,6 +464,24 @@ body:not(.dark-theme) article li {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  align-self: stretch;
+}
+
+/* Equal footprint for all six portfolio cards (desktop): matches tallest cards like Bioinformatics */
+@media (min-width: 769px) {
+  #projects article {
+    min-height: 38rem;
+  }
+}
+
+#projects article ul,
+#projects article ol {
+  margin: 0 0 0.57222rem 0;
+  padding-left: 1.2rem;
+}
+
+#projects article ol li {
+  font-size: 0.72968218125rem;
 }
 
 #publications article {
@@ -659,10 +677,11 @@ footer p {
     gap: 1.05rem;
   }
   
-  /* Reduced size for projects and publications boxes on tablet */
+  /* Stack columns on tablet — drop fixed min-height so cards size to content */
   #projects article,
   #publications article {
     padding: 1.05rem;
+    min-height: 0;
   }
 }
 

@@ -335,7 +335,7 @@ section {
   align-items: start;
 }
 
-/* Publications — three columns on desktop (two below ~1024px, one on small screens) */
+/* Publications — three columns on desktop (stacks to one column ≤768px) */
 #publications {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-content: start;
@@ -610,12 +610,6 @@ footer p {
     left: 1.25rem;
     width: 150px;
     height: 150px;
-  }
-}
-
-@media (max-width: 1024px) {
-  #publications {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

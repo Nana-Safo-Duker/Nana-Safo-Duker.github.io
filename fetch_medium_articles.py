@@ -2,10 +2,16 @@ import json
 import urllib.request
 import xml.etree.ElementTree as ET
 
-# Fetch RSS feed
+# Fetch RSS feed (Medium may 403 requests without a browser-like User-Agent)
 rss_url = "https://medium.com/feed/@freshsafoduker300"
 try:
-    with urllib.request.urlopen(rss_url) as response:
+    req = urllib.request.Request(
+        rss_url,
+        headers={
+            "User-Agent": "Mozilla/5.0 (compatible; PortfolioRSS/1.0; +https://nana-safo-duker.github.io)"
+        },
+    )
+    with urllib.request.urlopen(req) as response:
         rss_content = response.read().decode('utf-8')
     
     # Parse XML

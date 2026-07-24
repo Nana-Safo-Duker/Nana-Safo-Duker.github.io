@@ -204,10 +204,11 @@ body {
 .genehus-logo-icon {
   width: 1.35rem;
   height: 1.35rem;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 50%;
   vertical-align: middle;
   flex-shrink: 0;
+  background: #000;
 }
 
 .genehus-logo-icon--lg {

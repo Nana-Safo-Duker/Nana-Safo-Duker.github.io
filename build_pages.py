@@ -43,10 +43,10 @@ def page(rel_path: str, title: str, heading: str, body: str, description: str = 
 
     home_href = f"{prefix}index.html" if prefix != "./" else "index.html"
     photo = f"{prefix}images/bio-photo.png"
-    logo = f"{prefix}images/genehus-mark.png?v=20260801a"
-    logo_full = f"{prefix}images/genehus-logo.png?v=20260801a"
-    css = f"{prefix}css/site.css?v=20260801a"
-    js = f"{prefix}js/nav.js?v=20260801a"
+    logo = f"{prefix}images/genehus-mark.png?v=20260808a"
+    logo_full = f"{prefix}images/genehus-logo.png?v=20260808a"
+    css = f"{prefix}css/site.css?v=20260808a"
+    js = f"{prefix}js/nav.js?v=20260808a"
     article_class = f"page {page_class}".strip() if page_class else "page"
 
     html = f"""<!doctype html>
@@ -89,7 +89,7 @@ def page(rel_path: str, title: str, heading: str, body: str, description: str = 
 <div id="main" role="main">
   <div class="article-author-side">
     <div itemscope itemtype="https://schema.org/Person">
-      <img src="{photo}?v=20260801a" class="bio-photo" alt="{NAME} bio photo" width="150" height="150">
+      <img src="{photo}?v=20260808a" class="bio-photo" alt="{NAME} bio photo" width="150" height="150">
       <h3 itemprop="name">{NAME}</h3>
       <p>{BIO}</p>
       <a href="mailto:{EMAIL}" class="author-social" target="_blank" rel="noopener"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
@@ -103,7 +103,7 @@ def page(rel_path: str, title: str, heading: str, body: str, description: str = 
 
   <div class="article-author-bottom">
     <div itemscope itemtype="https://schema.org/Person">
-      <img src="{photo}?v=20260801a" class="bio-photo" alt="{NAME} bio photo" width="150" height="150">
+      <img src="{photo}?v=20260808a" class="bio-photo" alt="{NAME} bio photo" width="150" height="150">
       <h3 itemprop="name">{NAME}</h3>
       <p>{BIO}</p>
       <a href="mailto:{EMAIL}" class="author-social" target="_blank" rel="noopener"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
@@ -156,10 +156,10 @@ HOME = """
         I’m committed to the ethical and responsible use of AI to drive equitable, transparent, and impactful solutions in global health.
       </p>
       <p class="founder-statement">
-        <span class="founder-statement__role">Founder &amp; CEO</span>
+        <span class="founder-statement__role">Founder | CEO</span>
         <span class="founder-statement__brand">
           <a href="https://genehus.bio" target="_blank" rel="noopener" class="founder-statement__brand-link">
-            <img src="./images/genehus-logo.png?v=20260801a" alt="GeneHus" class="genehus-logo-full">
+            <img src="./images/genehus-logo.png?v=20260808a" alt="GeneHus" class="genehus-logo-full">
           </a>
         </span>
         <a class="founder-statement__email" href="mailto:safoduker@genehus.bio">safoduker@genehus.bio</a>
@@ -453,7 +453,7 @@ BLOGS = """
 CONTACT = """
       <p class="contact-links">
         <a href="mailto:safoduker@genehus.bio"><i class="fa fa-envelope"></i> safoduker@genehus.bio</a>
-        <a href="https://genehus.bio" target="_blank" rel="noopener" class="author-social--genehus"><img src="../images/genehus-mark.png?v=20260801a" alt="GeneHus" class="genehus-logo-icon"> GeneHus</a>
+        <a href="https://genehus.bio" target="_blank" rel="noopener" class="author-social--genehus"><img src="../images/genehus-mark.png?v=20260808a" alt="GeneHus" class="genehus-logo-icon"> GeneHus</a>
         <a href="https://orcid.org/0009-0002-2472-8103" target="_blank" rel="noopener"><i class="fa fa-certificate"></i> Orcid</a>
         <a href="https://github.com/Nana-Safo-Duker" target="_blank" rel="noopener"><i class="fa fa-github"></i> GitHub</a>
         <a href="https://www.linkedin.com/in/nana-safo-duker-0aa25227a/" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i> LinkedIn</a>

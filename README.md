@@ -30,6 +30,8 @@ Or run `start-localhost.bat` / `start-server.ps1`.
 - Curriculum Vitae
 - Research Projects
 - Blogs
+- Certifications
+- Workshops & Conferences
 - Contact
 
 ## Regenerate pages

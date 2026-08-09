@@ -9,6 +9,8 @@ NAV = [
     ("Curriculum Vitae", "/cv/"),
     ("Research Projects", "/publications/"),
     ("Blogs", "/blogs/"),
+    ("Certifications", "/certifications/"),
+    ("Workshops & Conferences", "/workshops/"),
     ("Contact", "/contact/"),
 ]
 
@@ -43,10 +45,10 @@ def page(rel_path: str, title: str, heading: str, body: str, description: str = 
 
     home_href = f"{prefix}index.html" if prefix != "./" else "index.html"
     photo = f"{prefix}images/bio-photo.png"
-    logo = f"{prefix}images/genehus-mark.png?v=20260808a"
-    logo_full = f"{prefix}images/genehus-logo.png?v=20260808a"
-    css = f"{prefix}css/site.css?v=20260808a"
-    js = f"{prefix}js/nav.js?v=20260808a"
+    logo = f"{prefix}images/genehus-mark.png?v=20260809a"
+    logo_full = f"{prefix}images/genehus-logo.png?v=20260809a"
+    css = f"{prefix}css/site.css?v=20260809a"
+    js = f"{prefix}js/nav.js?v=20260809a"
     article_class = f"page {page_class}".strip() if page_class else "page"
 
     html = f"""<!doctype html>
@@ -89,7 +91,7 @@ def page(rel_path: str, title: str, heading: str, body: str, description: str = 
 <div id="main" role="main">
   <div class="article-author-side">
     <div itemscope itemtype="https://schema.org/Person">
-      <img src="{photo}?v=20260808a" class="bio-photo" alt="{NAME} bio photo" width="150" height="150">
+      <img src="{photo}?v=20260809a" class="bio-photo" alt="{NAME} bio photo" width="150" height="150">
       <h3 itemprop="name">{NAME}</h3>
       <p>{BIO}</p>
       <a href="mailto:{EMAIL}" class="author-social" target="_blank" rel="noopener"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
@@ -103,7 +105,7 @@ def page(rel_path: str, title: str, heading: str, body: str, description: str = 
 
   <div class="article-author-bottom">
     <div itemscope itemtype="https://schema.org/Person">
-      <img src="{photo}?v=20260808a" class="bio-photo" alt="{NAME} bio photo" width="150" height="150">
+      <img src="{photo}?v=20260809a" class="bio-photo" alt="{NAME} bio photo" width="150" height="150">
       <h3 itemprop="name">{NAME}</h3>
       <p>{BIO}</p>
       <a href="mailto:{EMAIL}" class="author-social" target="_blank" rel="noopener"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
@@ -159,7 +161,7 @@ HOME = """
         <span class="founder-statement__role">Founder | CEO</span>
         <span class="founder-statement__brand">
           <a href="https://genehus.bio" target="_blank" rel="noopener" class="founder-statement__brand-link">
-            <img src="./images/genehus-logo.png?v=20260808a" alt="GeneHus" class="genehus-logo-full">
+            <img src="./images/genehus-logo.png?v=20260809a" alt="GeneHus" class="genehus-logo-full">
           </a>
         </span>
         <a class="founder-statement__email" href="mailto:safoduker@genehus.bio">safoduker@genehus.bio</a>
@@ -450,10 +452,239 @@ BLOGS = """
       </div>
 """
 
+CERTIFICATIONS = """
+      <p class="cred-intro">Selected professional certifications in genomics, precision medicine, bioinformatics, data science, and AI law.</p>
+      <ul class="cred-list">
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Big Data, Genes, and Medicine</h3>
+            <p class="cred-meta">Coursera · The State University of New York · May 2024</p>
+          </div>
+          <a class="cred-link" href="files/big-data-genes-and-medicine.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Precision Medicine</h3>
+            <p class="cred-meta">Coursera · University of Geneva · May 2024</p>
+          </div>
+          <a class="cred-link" href="files/precision-medicine.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Data Science in Stratified Healthcare and Precision Medicine</h3>
+            <p class="cred-meta">Coursera · The University of Edinburgh · May 2024</p>
+          </div>
+          <a class="cred-link" href="files/data-science-stratified-healthcare-precision-medicine.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>The Data Science of Healthcare, Medicine and Public Health</h3>
+            <p class="cred-meta">LinkedIn Learning · Apr 2024</p>
+          </div>
+          <a class="cred-link" href="files/data-science-healthcare-medicine-public-health.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Python for Health Sciences and Healthcare</h3>
+            <p class="cred-meta">LinkedIn Learning · Apr 2024</p>
+          </div>
+          <a class="cred-link" href="files/python-for-health-sciences-healthcare.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Access Bioinformatics Databases with Biopython</h3>
+            <p class="cred-meta">Coursera Project Network · May 2024</p>
+          </div>
+          <a class="cred-link" href="files/access-bioinformatics-databases-biopython.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Computing for Cancer Informatics</h3>
+            <p class="cred-meta">Coursera · Johns Hopkins University · May 2024</p>
+          </div>
+          <a class="cred-link" href="files/computing-for-cancer-informatics.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Introduction to Genomic Technologies</h3>
+            <p class="cred-meta">Coursera · Johns Hopkins University · May 2024</p>
+          </div>
+          <a class="cred-link" href="files/introduction-to-genomic-technologies.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Introduction to the Biology of Cancer</h3>
+            <p class="cred-meta">Coursera · Johns Hopkins University · May 2024 · With Honors</p>
+          </div>
+          <a class="cred-link" href="files/introduction-to-biology-of-cancer.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Understanding Cancer Metastasis</h3>
+            <p class="cred-meta">Coursera · Johns Hopkins University · May 2024</p>
+          </div>
+          <a class="cred-link" href="files/understanding-cancer-metastasis.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Understanding Prostate Cancer</h3>
+            <p class="cred-meta">Coursera · Johns Hopkins University · Apr 2024</p>
+          </div>
+          <a class="cred-link" href="files/understanding-prostate-cancer.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>AI &amp; Law</h3>
+            <p class="cred-meta">Coursera · Lund University · Apr 2024</p>
+          </div>
+          <a class="cred-link" href="files/ai-and-law.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Genomics for Law</h3>
+            <p class="cred-meta">Coursera · University of Illinois at Urbana-Champaign · Apr 2024</p>
+          </div>
+          <a class="cred-link" href="files/genomics-for-law.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Legal Tech and the Digital Transformation of Law</h3>
+            <p class="cred-meta">Coursera · Universidad Austral · Apr 2024</p>
+          </div>
+          <a class="cred-link" href="files/legal-tech-digital-transformation-of-law.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>International Webinar Series for Life Scientists</h3>
+            <p class="cred-meta">Genomac Institute Inc. · Genomics, Bioinformatics &amp; Data Science · Jan 2025</p>
+          </div>
+          <a class="cred-link" href="files/international-webinar-series-life-scientists.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+      </ul>
+"""
+
+WORKSHOPS = """
+      <p class="cred-intro">Selected workshops, faculty development programmes, and conference participation in AI/ML, computational biology, data science, and research methods.</p>
+      <ul class="cred-list">
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>High Performance Computing and AI for Computational Biology</h3>
+            <p class="cred-meta">Workshop · IIT Kharagpur &amp; Tezpur University · National Supercomputing Mission · Oct 2021</p>
+          </div>
+          <a class="cred-link" href="files/hpc-ai-computational-biology-iit-kharagpur.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Workshop on Python Programming</h3>
+            <p class="cred-meta">Workshop · Dr. M.G.R. Educational and Research Institute · Nov 2021</p>
+          </div>
+          <a class="cred-link" href="files/workshop-python-programming.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Practical Debugging for Data Science</h3>
+            <p class="cred-meta">Webinar · Government Engineering College, Rajkot · Nov 2021</p>
+          </div>
+          <a class="cred-link" href="files/practical-debugging-for-data-science.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Research Perspective on Artificial Intelligence and Machine Learning</h3>
+            <p class="cred-meta">Webinar · Centre for Distance and Online Education · Apr 2022</p>
+          </div>
+          <a class="cred-link" href="files/research-perspective-ai-ml.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>The Role of Linear Algebra in Machine Learning, AI &amp; Data Science</h3>
+            <p class="cred-meta">International FDP · Mahatma Gandhi Institute of Technology · Nov–Dec 2021</p>
+          </div>
+          <a class="cred-link" href="files/linear-algebra-ml-ai-data-science-fdp.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Research Issues in Machine Learning and Artificial Intelligence</h3>
+            <p class="cred-meta">FDP · Pollachi College of Arts and Science · Nov 2021</p>
+          </div>
+          <a class="cred-link" href="files/research-issues-ml-ai-fdp.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Cloud Computing for Industry 4.0</h3>
+            <p class="cred-meta">National Level Online FDP · Institute of Aeronautical Engineering · Nov 2021</p>
+          </div>
+          <a class="cred-link" href="files/cloud-computing-industry-4-fdp.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Biomaterials and Tissue Engineering</h3>
+            <p class="cred-meta">BPI Mini-Symposium · IIT Madras · Nov 2021</p>
+          </div>
+          <a class="cred-link" href="files/biomaterials-tissue-engineering-iit-madras.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>A Systematic Navigation from Research to Research Proposals 2.0</h3>
+            <p class="cred-meta">National Level Online FDP · MVSR Engineering College · Nov 2021</p>
+          </div>
+          <a class="cred-link" href="files/research-to-research-proposals-fdp.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Research Methodology</h3>
+            <p class="cred-meta">National Level Workshop · D.G. Vaishnav College · 2021</p>
+          </div>
+          <a class="cred-link" href="files/research-methodology-workshop.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>New Gen Cyber Crimes</h3>
+            <p class="cred-meta">Webinar · C-DAC Hyderabad · Apr 2022</p>
+          </div>
+          <a class="cred-link" href="files/new-gen-cyber-crimes-cdac.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Innovation in Cyber Security using Image Steganography</h3>
+            <p class="cred-meta">International Webinar · Maharishi Markandeshwar University · Apr 2022</p>
+          </div>
+          <a class="cred-link" href="files/cyber-security-image-steganography.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>Cybercrime and Information Technology Act</h3>
+            <p class="cred-meta">National Level Webinar · St. Joseph’s College of Arts &amp; Science · Nov 2021</p>
+          </div>
+          <a class="cred-link" href="files/cybercrime-and-it-act.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>International Webinar on Applied Research</h3>
+            <p class="cred-meta">Webinar · Bharata Mata College / M.G. University · Nov 2021</p>
+          </div>
+          <a class="cred-link" href="files/international-webinar-applied-research.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>The Role of Fourier Analysis in Signal Processing</h3>
+            <p class="cred-meta">International Seminar · Mangayarkarasi College of Arts and Science · Nov 2021</p>
+          </div>
+          <a class="cred-link" href="files/fourier-analysis-signal-processing.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+        <li class="cred-item">
+          <div class="cred-item__body">
+            <h3>International Conference on Numerical and Analytical Techniques in Differential Equations (ICNATDE-2021)</h3>
+            <p class="cred-meta">Conference · Pondicherry University · Nov 2021</p>
+          </div>
+          <a class="cred-link" href="files/icnatde-2021-differential-equations.pdf" target="_blank" rel="noopener">View Certificate</a>
+        </li>
+      </ul>
+"""
+
 CONTACT = """
       <p class="contact-links">
         <a href="mailto:safoduker@genehus.bio"><i class="fa fa-envelope"></i> safoduker@genehus.bio</a>
-        <a href="https://genehus.bio" target="_blank" rel="noopener" class="author-social--genehus"><img src="../images/genehus-mark.png?v=20260808a" alt="GeneHus" class="genehus-logo-icon"> GeneHus</a>
+        <a href="https://genehus.bio" target="_blank" rel="noopener" class="author-social--genehus"><img src="../images/genehus-mark.png?v=20260809a" alt="GeneHus" class="genehus-logo-icon"> GeneHus</a>
         <a href="https://orcid.org/0009-0002-2472-8103" target="_blank" rel="noopener"><i class="fa fa-certificate"></i> Orcid</a>
         <a href="https://github.com/Nana-Safo-Duker" target="_blank" rel="noopener"><i class="fa fa-github"></i> GitHub</a>
         <a href="https://www.linkedin.com/in/nana-safo-duker-0aa25227a/" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i> LinkedIn</a>
@@ -468,6 +699,8 @@ def main():
     page("cv/index.html", "Curriculum Vitae", "Nana Safo Duker", CV, page_class="cv-page")
     page("publications/index.html", "Research Projects Portfolio", "Research Projects Portfolio", PUBLICATIONS, page_class="projects-page")
     page("blogs/index.html", "Articles & Blogs", "Articles & Blogs", BLOGS, page_class="blogs-page")
+    page("certifications/index.html", "Certifications", "Certifications", CERTIFICATIONS, page_class="creds-page")
+    page("workshops/index.html", "Workshops & Conferences", "Workshops & Conferences", WORKSHOPS, page_class="creds-page")
     page("contact/index.html", "Contact", "Contact", CONTACT)
 
 

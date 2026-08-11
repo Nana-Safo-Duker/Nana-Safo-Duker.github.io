@@ -798,7 +798,7 @@ body {
 
 .cred-meta {
   font-family: "PT Serif", Georgia, serif;
-  font-size: 0.88rem !important;
+  font-size: 0.7rem !important;
   line-height: 1.45;
   color: #a8a8a8 !important;
   margin: 0 !important;
@@ -809,14 +809,14 @@ body {
   align-self: center;
   display: inline-block;
   font-family: "DM Sans", system-ui, sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.56rem;
   font-weight: 600;
   color: #fff !important;
   text-decoration: none !important;
-  padding: 0.33rem 0.7rem;
+  padding: 0.26rem 0.56rem;
   border: 1px solid #fff;
   background: #2f2f2f;
-  border-radius: 5px;
+  border-radius: 4px;
   white-space: nowrap;
   transition: background 0.2s ease, color 0.2s ease;
 }

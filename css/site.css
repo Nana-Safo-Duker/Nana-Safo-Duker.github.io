@@ -759,6 +759,7 @@ body {
 /* Certifications / Workshops — academic credential list */
 .creds-page .cred-intro {
   color: var(--text-muted) !important;
+  font-family: "PT Serif", Georgia, serif !important;
   margin: 0 0 1.35rem !important;
   max-width: 42rem;
 }
@@ -786,7 +787,7 @@ body {
 }
 
 .cred-item h3 {
-  font-family: "DM Sans", "PT Sans Narrow", system-ui, sans-serif !important;
+  font-family: "PT Serif", Georgia, serif !important;
   font-size: 0.98rem !important;
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -796,8 +797,8 @@ body {
 }
 
 .cred-meta {
-  font-family: "DM Sans", system-ui, sans-serif;
-  font-size: 0.82rem !important;
+  font-family: "PT Serif", Georgia, serif;
+  font-size: 0.88rem !important;
   line-height: 1.45;
   color: #a8a8a8 !important;
   margin: 0 !important;

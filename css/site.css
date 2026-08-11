@@ -826,6 +826,11 @@ body {
   margin-right: 2.25rem;
 }
 
+/* Workshops: tiny nudge toward the right */
+.workshops-page .cred-link {
+  margin-right: -0.6rem;
+}
+
 .cred-link:hover {
   background: #fff;
   color: #000 !important;
@@ -840,6 +845,10 @@ body {
 
   .certifications-page .cred-link {
     align-self: flex-start;
+    margin-right: 0;
+  }
+
+  .workshops-page .cred-link {
     margin-right: 0;
   }
 }

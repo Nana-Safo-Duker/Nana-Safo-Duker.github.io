@@ -818,8 +818,12 @@ body {
   background: #2f2f2f;
   border-radius: 4px;
   white-space: nowrap;
-  margin-right: 2.25rem;
   transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Shift only Certifications 'View Certificate' button */
+.certifications-page .cred-link {
+  margin-right: 2.25rem;
 }
 
 .cred-link:hover {
@@ -834,7 +838,7 @@ body {
     gap: 0.75rem;
   }
 
-  .cred-link {
+  .certifications-page .cred-link {
     align-self: flex-start;
     margin-right: 0;
   }

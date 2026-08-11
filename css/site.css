@@ -818,6 +818,7 @@ body {
   background: #2f2f2f;
   border-radius: 4px;
   white-space: nowrap;
+  margin-right: 2.25rem;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
@@ -835,6 +836,7 @@ body {
 
   .cred-link {
     align-self: flex-start;
+    margin-right: 0;
   }
 }
 

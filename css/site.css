@@ -808,14 +808,14 @@ body {
   align-self: center;
   display: inline-block;
   font-family: "DM Sans", system-ui, sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.7rem;
   font-weight: 600;
   color: #fff !important;
   text-decoration: none !important;
-  padding: 0.45rem 0.85rem;
+  padding: 0.33rem 0.7rem;
   border: 1px solid var(--accent);
   background: var(--accent);
-  border-radius: 6px;
+  border-radius: 5px;
   white-space: nowrap;
   transition: background 0.2s ease, color 0.2s ease;
 }

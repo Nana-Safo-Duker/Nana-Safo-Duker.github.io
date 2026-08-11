@@ -758,7 +758,7 @@ body {
 
 /* Certifications / Workshops — academic credential list */
 .creds-page .cred-intro {
-  color: var(--text-muted) !important;
+  color: #fff !important;
   margin: 0 0 1.35rem !important;
   max-width: 42rem;
 }
@@ -776,6 +776,7 @@ body {
   justify-content: space-between;
   gap: 1.25rem;
   padding: 1.05rem 0;
+  background: #121212;
   border-bottom: 1px solid #2e2e2e;
   margin: 0 !important;
 }
@@ -799,7 +800,7 @@ body {
   font-family: "DM Sans", system-ui, sans-serif;
   font-size: 0.82rem !important;
   line-height: 1.45;
-  color: #a8a8a8 !important;
+  color: #e0e0e0 !important;
   margin: 0 !important;
 }
 
@@ -813,16 +814,16 @@ body {
   color: #fff !important;
   text-decoration: none !important;
   padding: 0.33rem 0.7rem;
-  border: 1px solid var(--accent);
-  background: var(--accent);
+  border: 1px solid #fff;
+  background: transparent;
   border-radius: 5px;
   white-space: nowrap;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
 .cred-link:hover {
-  background: transparent;
-  color: #fff !important;
+  background: #fff;
+  color: #000 !important;
   border-color: #fff;
 }
 

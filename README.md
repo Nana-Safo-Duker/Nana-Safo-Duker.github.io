@@ -11,7 +11,7 @@ Personal academic-style portfolio (layout inspired by [erdogant.github.io](https
 - **Website:** [genehus.bio](https://genehus.bio)
 - **Email:** [safoduker@genehus.bio](mailto:safoduker@genehus.bio)
 - **GitHub:** [@Nana-Safo-Duker](https://github.com/Nana-Safo-Duker)
-- **LinkedIn:** [nana-safo-duker-0aa25227a](https://www.linkedin.com/in/nana-safo-duker-0aa25227a/)
+- **LinkedIn:** [nana-safo-duker](https://www.linkedin.com/in/nana-safo-duker/)
 - **Medium:** [@freshsafoduker300](https://medium.com/@freshsafoduker300)
 
 ## Local development

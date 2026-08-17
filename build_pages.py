@@ -326,6 +326,34 @@ PUBLICATIONS = """
 BLOGS = """
       <div class="blogs-grid">
         <article class="blog-card">
+          <h3>🚨 The Most Dangerous AI Failures Already Happen Every Day</h3>
+          <p>
+            AI safety is not primarily a story about rogue superintelligence—it is a story about ordinary systems optimizing imperfect
+            objectives, drifting under real-world conditions, and causing harm while still appearing to work as intended. Draws on
+            <em>Concrete Problems in AI Safety</em> to show why accidents from reward hacking, distribution shift, and limited supervision
+            are the default mode of deployed machine learning, not the exception.
+          </p>
+          <a href="https://medium.com/@freshsafoduker300/the-most-dangerous-ai-failures-already-happen-every-day-0eb64c638ec4" target="_blank" rel="noopener" class="btn">Read Article →</a>
+        </article>
+        <article class="blog-card">
+          <h3>🌡️ The Real Climate Debate Isn't About AI: It's About Governance</h3>
+          <p>
+            AI can support climate innovation and efficiency, but without strong governance and accountability it can also increase
+            emissions and worsen inequality. Argues that climate outcomes depend on how institutions measure impact, regulate
+            infrastructure growth, and enforce disclosure—not on whether algorithms are inherently “good” or “bad” for the planet.
+          </p>
+          <a href="https://medium.com/@freshsafoduker300/the-real-climate-debate-isnt-about-ai-it-s-about-governance-1c66cfe60aa1" target="_blank" rel="noopener" class="btn">Read Article →</a>
+        </article>
+        <article class="blog-card">
+          <h3>🏥 The Hospital Dashboard Says Everything Is Fine</h3>
+          <p>
+            Clinical AI rarely collapses dramatically. More often it slowly drifts away from reality while hospitals continue trusting
+            systems that look accurate on paper but fail under the pressures of real patient care—through hidden stratification,
+            automation bias, and dashboards that stay green long after the evidence behind them has weakened.
+          </p>
+          <a href="https://medium.com/@freshsafoduker300/the-hospital-dashboard-says-everything-is-fine-464e62a44e5e" target="_blank" rel="noopener" class="btn">Read Article →</a>
+        </article>
+        <article class="blog-card">
           <h3>🩺 Predicting Cancer Outcomes with Radiomics and AI in Radiology</h3>
           <p>
             Quantitative imaging biomarkers and machine learning for precision oncology: how radiomics and AI extract prognostic signals from medical images

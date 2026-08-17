@@ -354,6 +354,15 @@ BLOGS = """
           <a href="https://medium.com/@freshsafoduker300/the-hospital-dashboard-says-everything-is-fine-464e62a44e5e" target="_blank" rel="noopener" class="btn">Read Article →</a>
         </article>
         <article class="blog-card">
+          <h3>⚡ Inside the Future of AI-Powered Energy Forecasting</h3>
+          <p>
+            A reproducible time-series forecasting framework for modern energy systems using statistical metrics and ML models.
+            Reviews how lag features, leakage-free validation, and metric choice shape electricity load forecasts as renewables,
+            weather, and demand become more nonlinear—and why grid reliability depends on the whole workflow, not just the model.
+          </p>
+          <a href="https://medium.com/@freshsafoduker300/predicting-power-demand-with-machine-learning-d2d56f59ae48" target="_blank" rel="noopener" class="btn">Read Article →</a>
+        </article>
+        <article class="blog-card">
           <h3>🩺 Predicting Cancer Outcomes with Radiomics and AI in Radiology</h3>
           <p>
             Quantitative imaging biomarkers and machine learning for precision oncology: how radiomics and AI extract prognostic signals from medical images
@@ -376,6 +385,24 @@ BLOGS = """
             that benefits alone cannot explain away.
           </p>
           <a href="https://medium.com/@freshsafoduker300/every-ai-tool-is-also-a-potential-weapon-730b3dfc7f1d" target="_blank" rel="noopener" class="btn">Read Article →</a>
+        </article>
+        <article class="blog-card">
+          <h3>🔋 Modeling the Future of Clean Energy</h3>
+          <p>
+            A reproducible computational framework for sustainable energy transition analysis using scenario modeling and
+            statistical inference. Compares baseline versus accelerated pathways for renewable adoption and emissions, arguing
+            that transition planning needs uncertainty-aware modelling ecosystems—not a single deterministic forecast.
+          </p>
+          <a href="https://medium.com/@freshsafoduker300/modeling-the-future-of-clean-energy-ee76e55a49b5" target="_blank" rel="noopener" class="btn">Read Article →</a>
+        </article>
+        <article class="blog-card">
+          <h3>🧬 Toward Precision Oncology: Computational Methods for Treatment Optimization</h3>
+          <p>
+            A computational review of machine learning and multi-omics approaches for personalized cancer treatment optimization.
+            Frames therapy design as a constrained problem—maximize efficacy, minimize toxicity—using genomic, transcriptomic,
+            and clinical data to move from population protocols toward patient-specific decision support.
+          </p>
+          <a href="https://medium.com/@freshsafoduker300/toward-precision-oncology-computational-methods-for-treatment-optimization-cc344cf6491f" target="_blank" rel="noopener" class="btn">Read Article →</a>
         </article>
         <article class="blog-card">
           <h3>📊 Making Sense of Health Signals: A Machine Learning Approach to Digital Epidemiology</h3>

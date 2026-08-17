@@ -45,10 +45,10 @@ def page(rel_path: str, title: str, heading: str, body: str, description: str = 
 
     home_href = f"{prefix}index.html" if prefix != "./" else "index.html"
     photo = f"{prefix}images/bio-photo.png"
-    logo = f"{prefix}images/genehus-mark.png?v=20260817e"
-    logo_full = f"{prefix}images/genehus-logo.png?v=20260817e"
-    css = f"{prefix}css/site.css?v=20260817e"
-    js = f"{prefix}js/nav.js?v=20260817e"
+    logo = f"{prefix}images/genehus-mark.png?v=20260817f"
+    logo_full = f"{prefix}images/genehus-logo.png?v=20260817f"
+    css = f"{prefix}css/site.css?v=20260817f"
+    js = f"{prefix}js/nav.js?v=20260817f"
     article_class = f"page {page_class}".strip() if page_class else "page"
 
     html = f"""<!doctype html>
@@ -91,7 +91,7 @@ def page(rel_path: str, title: str, heading: str, body: str, description: str = 
 <div id="main" role="main">
   <div class="article-author-side">
     <div itemscope itemtype="https://schema.org/Person">
-      <img src="{photo}?v=20260817e" class="bio-photo" alt="{NAME} bio photo" width="150" height="150">
+      <img src="{photo}?v=20260817f" class="bio-photo" alt="{NAME} bio photo" width="150" height="150">
       <h3 itemprop="name">{NAME}</h3>
       <p>{BIO}</p>
       <a href="mailto:{EMAIL}" class="author-social" target="_blank" rel="noopener"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
@@ -105,7 +105,7 @@ def page(rel_path: str, title: str, heading: str, body: str, description: str = 
 
   <div class="article-author-bottom">
     <div itemscope itemtype="https://schema.org/Person">
-      <img src="{photo}?v=20260817e" class="bio-photo" alt="{NAME} bio photo" width="150" height="150">
+      <img src="{photo}?v=20260817f" class="bio-photo" alt="{NAME} bio photo" width="150" height="150">
       <h3 itemprop="name">{NAME}</h3>
       <p>{BIO}</p>
       <a href="mailto:{EMAIL}" class="author-social" target="_blank" rel="noopener"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
@@ -161,7 +161,7 @@ HOME = """
         <span class="founder-statement__role">Founder | CEO</span>
         <span class="founder-statement__brand">
           <a href="https://genehus.bio" target="_blank" rel="noopener" class="founder-statement__brand-link">
-            <img src="./images/genehus-logo.png?v=20260817e" alt="GeneHus" class="genehus-logo-full">
+            <img src="./images/genehus-logo.png?v=20260817f" alt="GeneHus" class="genehus-logo-full">
           </a>
         </span>
         <a class="founder-statement__email" href="mailto:safoduker@genehus.bio">safoduker@genehus.bio</a>
@@ -495,15 +495,6 @@ BLOGS = """
           </p>
           <a href="https://medium.com/@freshsafoduker300/predicting-gene-expression-from-dna-sequence-using-deep-learning-models-1b612908bb9c" target="_blank" rel="noopener" class="btn">Read Article →</a>
         </article>
-        <article class="blog-card">
-          <h3>From Retina to Risk: Predicting Cardiovascular Health Through Deep Learning</h3>
-          <p>
-            A comprehensive analysis of <em>Nature Biomedical Engineering (2018)</em>, exploring how retinal imaging and deep learning
-            can predict systemic cardiovascular health. Highlights AI's role in early disease detection and precision health,
-            demonstrating that deep learning models can predict key cardiovascular risk factors directly from retinal fundus photographs.
-          </p>
-          <a href="https://medium.com/@freshsafoduker300/from-retina-to-risk-predicting-cardiovascular-health-through-deep-learning-c24f6ac58646" target="_blank" rel="noopener" class="btn">Read Article →</a>
-        </article>
       </div>
 """
 
@@ -739,7 +730,7 @@ WORKSHOPS = """
 CONTACT = """
       <p class="contact-links">
         <a href="mailto:safoduker@genehus.bio"><i class="fa fa-envelope"></i> safoduker@genehus.bio</a>
-        <a href="https://genehus.bio" target="_blank" rel="noopener" class="author-social--genehus"><img src="../images/genehus-mark.png?v=20260817e" alt="GeneHus" class="genehus-logo-icon"> GeneHus</a>
+        <a href="https://genehus.bio" target="_blank" rel="noopener" class="author-social--genehus"><img src="../images/genehus-mark.png?v=20260817f" alt="GeneHus" class="genehus-logo-icon"> GeneHus</a>
         <a href="https://orcid.org/0009-0002-2472-8103" target="_blank" rel="noopener"><i class="fa fa-certificate"></i> Orcid</a>
         <a href="https://github.com/Nana-Safo-Duker" target="_blank" rel="noopener"><i class="fa fa-github"></i> GitHub</a>
         <a href="https://www.linkedin.com/in/nana-safo-duker/" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i> LinkedIn</a>

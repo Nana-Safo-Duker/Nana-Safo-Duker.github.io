@@ -381,7 +381,7 @@ body {
 
 .contact-links {
   display: grid;
-  grid-template-columns: repeat(3, max-content);
+  grid-template-columns: repeat(2, max-content);
   column-gap: 1.75rem;
   row-gap: 0.95rem;
   margin: 0.35rem 0 1.35rem;

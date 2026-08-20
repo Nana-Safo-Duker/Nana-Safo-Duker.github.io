@@ -736,7 +736,7 @@ CONTACT = """
         <a href="https://www.linkedin.com/in/nana-safo-duker/" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i> LinkedIn</a>
         <a href="https://medium.com/@freshsafoduker300" target="_blank" rel="noopener"><i class="fa fa-medium"></i> Medium</a>
       </p>
-      <p>For collaboration, research inquiries, or questions about <a href="https://genehus.bio" target="_blank" rel="noopener">GeneHus</a>, email <a href="mailto:safoduker@genehus.bio">safoduker@genehus.bio</a>.</p>
+      <p>For collaboration, research inquiries, or questions about <a href="https://genehus.bio" target="_blank" rel="noopener">GeneHus</a>, email <a href="mailto:info@genehus.bio">info@genehus.bio</a>.</p>
 """
 
 
